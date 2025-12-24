@@ -9,9 +9,11 @@ print("Saya Telah Memilih Angka Dari 1-100 ")
 print("Coba Tebak Angka Tersebut!!")
 # Program Start
 def game_angka():
+ """Membuat Angka Random"""
  angka = random.randint(1,100)
  i = 0
  while True:
+  """Membuat Eksepsi"""
     try:
         tebakan = int(input("Masukan Tebakan Anda = "))
         i += 1
@@ -31,4 +33,5 @@ def game_angka():
     except ValueError:
         print("Kamu Memasukan Tipe Data Yang Tidak Sesuai")  
 # Main Program
+
 game_angka()
